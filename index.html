@@ -1,466 +1,156 @@
+<!-- =======================================================
+    Modified by: Hikaru Kasai
+                 Webmaster 2017-2018
+                 UC Irvine Engineering Student Council
+======================================================= -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Engineering Student Council - UC Irvine</title>
 
-    <!--ESC Website Title-->
-    <title>Engineering Student Council</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
-    <!--ESC Favicon-->
-    <link href="assets/img/logos/esc-logo-blue-gold.png" rel="icon" />
-
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!--Vendor CSS Files (Animations, Icons, Image/Video, Mobile Swiping)-->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!--Main CSS File-->
-    <link href="assets/css/style.css" rel="stylesheet" />
-
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" />
     <!-- =======================================================
-    * Template Name: Groovin - v4.2.0
-    * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+        Theme Name: Day
+        Theme URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+        Author: BootstrapMade
+        Author URL: https://bootstrapmade.com
+    ======================================================= -->
+    <script src="js/jquery.js"></script>
+    <script src='lib/jquery.min.js'></script>
+    <script src = "lib/moment.min.js"></script>
+    <link href='css/fullcalendar.css' rel='stylesheet' />
+    <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src = "js/fullcalendar.min.js"></script>
 
-    <!--Header and Footer Integration with jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106937092-1"></script>
     <script>
-      $.get("header.html", function (response) {
-        $("#header").html(response);
-      });
-      $.get("footer.html", function (response) {
-        $("#footer").html(response);
-      });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106937092-1');
     </script>
   </head>
 
-  <body>
-    <!--Header Section-->
-    <header id="header" class="fixed-top d-flex align-items-center">
-  <div class="container d-flex align-items-center justify-content-between">
-    <!--ESC Logo-->
-    <a href="index.html" class="logo"
-      ><img
-        src="assets/img/logos/esc-logo-white-gold.png"
-        alt=""
-        class="img-fluid"
-    /></a>
+	<header>
+    <script>
+      $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </header>
+<body>
+  <div id="header"></div>
 
-    <!--ESC Name-->
-    <h1 class="logo">
-      <a href="index.html">Engineering Student Council</a>
-    </h1>
+	<div class="slider">
+		<div id="about-slider">
+			<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators visible-xs">
+					<li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-slider" data-slide-to="1"></li>
+					<li data-target="#carousel-slider" data-slide-to="2"></li>
+				</ol>
 
-    <nav id="navbar" class="navbar">
-      <ul>
-        <!--Events Dropdown-->
-        <li class="dropdown">
-          <a href="#"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <!--Upcoming Events Tab-->
-            <li class="dropdown">
-              <a href="#"
-                ><span>Upcoming Events (TBA)</span> <i class="bi"></i
-              ></a>
-              <ul>
-                <!--Add Upcoming Events Here-->
-              </ul>
-            </li>
-            <div class="nav-divider"></div>
-            <!--Past Events Tab-->
-            <li class="dropdown">
-              <a href="#"
-                ><span>Past Events</span> <i class="bi bi-chevron-right"></i
-              ></a>
-              <ul>
-                <li>
-                  <a href="summer-2021.html">Summer 2021</a>
-                </li>
-              </ul>
-            </li>
-            <!--Annual Events Tab-->
-            <li class="dropdown">
-              <a href="#"
-                ><span>Annual Events</span> <i class="bi bi-chevron-right"></i
-              ></a>
-              <ul>
-                <li>
-                  <a href="network-dinner.html">Networking Dinner Night</a>
-                </li>
-                <li><a href="deans-picnic.html">Dean's Picnic</a></li>
-                <li><a href="research-fair.html">Research Fair</a></li>
-                  <a href="engitech.html">EngiTech Career Fair</a>
-                </li>
-                  <div class="nav-divider"></div>
-                  <li><a href="eweek.html">E-Week</a></li>
-              </ul>
-            </li>
-            <!--Add Calendar Tab Here-->
-            <!--<li><a href="calendar.html">Calendar</a></li>-->
-          </ul>
-        </li>
-
-        <!--Committees Dropdown-->
-        <li class="dropdown">
-          <a href="#"
-            ><span>Committees</span> <i class="bi bi-chevron-down"></i
-          ></a>
-          <ul>
-            <!--ECOM and Cabinet Tabs-->
-            <li>
-              <a href="ecomm.html">Executive Committee Members</a>
-            </li>
-            <li><a href="cabinet.html">Cabinet Members</a></li>
-            <div class="nav-divider"></div>
-            <!--Cabinet Committee Tabs-->
-            <li>
-              <a href="outreach.html">Community Outreach</a>
-            </li>
-            <li>
-              <a href="corporate.html">Corporate Affairs</a>
-            </li>
-            <li>
-              <a href="faculty.html">Faculty Engagement</a>
-            </li>
-            <li>
-              <a href="studs.html">Student Involvement</a>
-            </li>
-            <li>
-              <a href="communications.html">Communications</a>
-            </li>
-            <div class="nav-divider"></div>
-            <!--LIFE and EMF Tabs-->
-            <li>
-              <a href="life.html">Leaders in Freshman Engineering</a>
-            </li>
-            <li>
-              <a href="emf.html">Engineers Mentoring the Future</a>
-            </li>
-          </ul>
-        </li>
-
-        <!--Add Application Dropdown Here (If Needed)-->
-
-        <!--Add Company Info Dropdown Here (If Needed)-->
-
-        <!--About Us Dropdown-->
-        <li class="dropdown">
-          <a href="#"
-            ><span>About Us</span> <i class="bi bi-chevron-down"></i
-          ></a>
-          <ul>
-            <!--About Us Tabs-->
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="mission.html">Our Mission</a></li>
-            <div class="nav-divider"></div>
-            <li><a href="http://esc.eng.uci.edu/p-council/index.html" target="_blank" rel="noopener noreferrer">P-Council</a></li>
-            <div class="nav-divider"></div>
-            <!--FAQs Tab-->
-            <li><a href="faq.html">FAQs</a></li>
-          </ul>
-        </li>
-
-        <!--Contact Us Button-->
-        <li><a class="getstarted scrollto" href="#footer">Contact Us</a></li>
-
-      </ul>
-
-      <!--Boostrap Mobile Navigation Bar-->
-      <i class="bi bi-list mobile-nav-toggle"></i>
-      
-    </nav>
-  </div>
-</header>
-
-    <!--Main Carousel Section ("hero" is used for CSS)-->
-    <section id="hero">
-      <div class="hero-container">
-        <div
-          id="heroCarousel"
-          data-bs-interval="5000"
-          class="carousel slide carousel-fade"
-          data-bs-ride="carousel"
-        >
-          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-          <div class="carousel-inner" role="listbox">
-            <!--Slide 1: ESC Home-->
-            <div
-              class="carousel-item active"
-              style="background: url(assets/img/backgrounds/beach_photo.png); background-size: cover"
-            >
-              <div class="carousel-container">
-                <div class="carousel-content">
-                  <h2 class="animate__animated animate__fadeInDown">
-                    Engineering Student Council
-                  </h2>
-                  <p class="animate__animated animate__fadeInUp">
-                    Henry Samueli School of Engineering </br> University of California, Irvine
-                  </p>
-                  <div>
-                    <a
-                      href="#video"
-                      class="
-                        btn-get-started
-                        animate__animated animate__fadeInUp
-                        scrollto
-                      "
-                      >Learn More</a
-                    >
-                  </div>
-                </div>
-              </div>
+				<div class="carousel-inner">
+          <div class="carousel-caption">
+            <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+              <h2><span>Engineering Student Council</span></h2>
             </div>
-            <!--Slide 2: ESC Newsletter-->
-            <div
-              class="carousel-item"
-              style="background: url(assets/img/backgrounds/douglass-people.png); background-size: cover"
-            >
-              <div class="carousel-container">
-                <div class="carousel-content">
-                  <h2 class="animate__animated animate__fadeInDown">
-                    Subscribe to Our Newsletter
-                  </h2>
-                  <p class="animate__animated animate__fadeInUp">
-                    Stay updated on the latest engineering events and gain access to some amazing engineering resouces!
-                  </p>
-                  <div>
-                    <a
-                      href="#newsletter"
-                      target="_blank" rel="noopener noreferrer"
-                      class="btn-get-started
-                      animate__animated animate__fadeInUp
-                      scrollto" href="https://tinyurl.com/esi-subscription" role="button"
-                      >Subscribe</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Slide 3: ESC Stamp Card Rewards Program-->
-            <div
-              class="carousel-item"
-              style="background: url(assets/img/backgrounds/engineering-night.png); background-size: cover"
-            >
-              <div class="carousel-container">
-                <div class="carousel-content">
-                  <h2 class="animate__animated animate__fadeInDown">
-                    Join Our Stamp Card Rewards Program
-                  </h2>
-                  <p class="animate__animated animate__fadeInUp">
-                    <!--Line break for design-->
-                    Earn free prizes such as limited-edition stickers, <br> Anteater merch, candy, and more!
-                  </p>
-                  <div>
-                    <a
-                      href="#stamp"
-                      class="btn-get-started
-                      animate__animated animate__fadeInUp
-                      scrollto"
-                      >Join Now</a
-                    >
-                  </div>
-                </div>
+            <div class="col-md-10 col-md-offset-1">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                <p>Henry Samueli School of Engineering | UC Irvine</p>
               </div>
             </div>
           </div>
-          <!--Carousel Side Navigation Buttons-->
-          <a
-            class="carousel-control-prev"
-            href="#heroCarousel"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <span
-              class="carousel-control-prev-icon bi bi-chevron-left"
-              aria-hidden="true"
-            ></span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#heroCarousel"
-            role="button"
-            data-bs-slide="next"
-          >
-            <span
-              class="carousel-control-next-icon bi bi-chevron-right"
-              aria-hidden="true"
-            ></span>
-          </a>
-        </div>
+					<div class="item active">
+						<img src="assets/eng_hall2.jpg" class="img-responsive" alt="">
+          </div>
+
+				   <div class="item">
+						<img src="assets/MDEA.jpg" class="img-responsive" alt="">
+				   </div>
+
+				 <div class="item">
+					<img src="assets/UCI-campus-sign.jpg" class="img-responsive" alt="">
+				  </div>
+				</div>
+
+
+				<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+
+				<a class=" right carousel-control hidden-xs "href="#carousel-slider" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div> <!--/#carousel-slider-->
+		</div><!--/#about-slider-->
+	</div><!--/#slider-->
+
+
+<!--Mission Statement-->
+	<div class="about">
+		<div class="container">
+			<div class="text-center">
+				<h3>Mission Statement </h3>
+
+				<div class="col-md-10 col-md-offset-1">
+          <div class="wow fadeInDown" data-wow-duration="1400ms" data-wow-delay="300ms">
+					<p align="left">
+            It is the mission of Engineering Student Council (ESC) at UC Irvine to be a liaison between undergraduate engineering
+            students and the faculty, staff, and administration of The Henry Samueli School of Engineering. ESC serves as the
+            umbrella for other Engineering Student Organizations to promote cooperation and build relationships among students.
+            We create networking and research opportunities for students and faculty by coordinating events with other
+            organizations and businesses across Southern California. As student leaders, we envision and advocate for the
+            educational, social, and professional advancement of the engineering community.
+          </p>
+          </div>
+				</div>
+        <!--- Newsletter -->
+        <h3> Escritoire Newsletter</h3>
+        <div class="col-md-10 col-md-offset-1">
+          <div class="wow fadeInDown" data-wow-duration="1400ms" data-wow-delay="300ms">
+            <p> Come check out what's been going on at ESC! <br> <br>
+            <a href="assets/newsletters/escritoire-vol.ii-no1-PDF.pdf" target="_blank" > <font color = "blue"> Vol II No 1 </font></a> <br>
+            <a href="assets/newsletters/escritoire-vol.iii-no1.pdf" target="_blank" > <font color = "blue"> Vol III No 1 </font></a>
+           </p>
+          </div>
+				</div>
+
       </div>
-    </section>
 
-    <main id="main">
-      <!--Video Section ("about" is used for CSS)-->
-      <section id="video" class="about">
-        <div class="container">
-          <div class="row no-gutters">
-            <div
-              class="
-                image
-                col-xl-5
-                d-flex
-                align-items-stretch
-                justify-content-center justify-content-lg-start"
-            >
-              <video controls style="background-size: contain; max-width:100%; max-height:100%; min-height: 400px;">
-                <source src="assets/vid/ESC_Promo_2021_Final.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div
-              class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch"
-            >
-              <div class="content d-flex flex-column justify-content-center">
-                <h3>Welcome to ESC!</h3>
-                <p>
-                  Hello everyone, we are Engineering Student Council! We are here to support students, alumni, faculty, and industry professionals of the UCI engineering community. 
-                  We have a lot of fun events and activities coming up this year, so stay tuned! <br><br>
+		</div>
+	</div>
 
-                  Watch our <b>Summer 2021 Promo Video</b> for more information!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!--Newsletter Section ("about" is used for CSS)-->
-      <section id="newsletter" class="about">
-        <div class="container">
-          <div class="row no-gutters">
-            <a class="
-                col-xl-5
-                d-flex
-                align-items-stretch
-                justify-content-center justify-content-lg-start"
-              style='background: url("assets/img/graphics/newsletter.png") center center no-repeat; 
-                      background-size: contain; max-width:100%; max-height:100%; min-height: 400px;'
-                      href="https://tinyurl.com/esi-subscription"
-                      target="_blank" rel="noopener noreferrer">
-            </a>
-            <div
-              class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch"
-            >
-              <div class="content d-flex flex-column justify-content-center">
-                <h3>Engineering Student Insider Newsletter</h3>
-                <p>
-                  Subscribe to the <b>Engineering Student Insider Newsletter</b>! The newsletter includes
-                  UCI engineering events hosted by all engineering student organizations, ESC events, and engineering resources.
-                  Don't miss out on an engineering opportunity! <br><br>
 
-                  Click <a href="https://tinyurl.com/esi-subscription" target="_blank" rel="noopener noreferrer"><u>here</u></a> to subscribe!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div id="footer"></div>
 
-      <!--Stamp Section ("about" is used for CSS)-->
-      <section id="stamp" class="about">
-        <div class="container">
-          <div class="row no-gutters">
-            <a class="
-                col-xl-5
-                d-flex
-                align-items-stretch
-                justify-content-center justify-content-lg-start"
-              style='background: url("assets/img/graphics/stamp-card.png") center center no-repeat; 
-                      background-size: contain; max-width:100%; max-height:100%; min-height: 400px;'
-                      href="https://forms.gle/ToFBmrUagGaBCnAz9"
-                      target="_blank" rel="noopener noreferrer">
-            </a>
-            <div
-              class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch"
-            >
-              <div class="content d-flex flex-column justify-content-center">
-                <h3>Stamp Card Rewards Program</h3>
-                <p>
-                  Join ESC's <b>Stamp Card Rewards Program</b>! Earn free prizes such as limited-edition stickers,
-                  Anteater merch, candy, and more! You get 1 stamp each time you repost one of our events on social media,
-                  and 2 stamps for each ESC event attended. <br><br>
-                  
-                  Be sure to fill out this <a href="https://forms.gle/ToFBmrUagGaBCnAz9" target="_blank" rel="noopener noreferrer"><u>form</u></a> after
-                  each event. Simply upload your old stamp card, and we will send you an updated one! Complete 10
-                  slots to win your prizes!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>wow = new WOW({}).init();</script>
 
-      <!--Upcoming Events Section ("portfolio" is used for CSS)-->
-      <section id="upcoming-events" class="portfolio">
-        <div class="container">
-          <div class="section-title">
-            <h2>Upcoming Events</h2>
-          </div>
-          <!--Event Classifications (see filter)-->
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-upcoming-industry">Industry</li>
-                <li data-filter=".filter-upcoming-school">School</li>
-                <li data-filter=".filter-upcoming-social">Social</li>
-                <li data-filter=".filter-upcoming-outreach">Outreach</li>
-              </ul>
-            </div>
-          </div>
+  <!--fullcalendar
+  <script src='https://fullcalendar.io/js/fullcalendar-3.1.0/lib/moment.min.js'></script>
+<script src='https://fullcalendar.io/js/fullcalendar-3.1.0/lib/jquery.min.js'></script>
+<script src='https://fullcalendar.io/js/fullcalendar-3.1.0/lib/jquery-ui.min.js'></script>
+<script src='https://fullcalendar.io/js/fullcalendar-3.1.0/fullcalendar.min.js'></script> -->
 
-          <!--No Upcoming Events Message-->
-          <h4 style="text-align: center;">There are no upcoming events, check back later!</h4>
-
-          <!--List of Upcoming Events By Classification (be sure to change filter)-->
-          <!--Add Upcoming Events Here (see past events for template)-->
-        </div>
-      </section>
-
-      <!--Past Events Section ("portfolio" is used for CSS)-->
-      <section id="past-events" class="portfolio">
-        <div class="container">
-          <div class="section-title">
-            <h2>Past Events</h2>
-          </div>
-          <!--Change 'link' to 'links' when applicable-->
-          <h4 style="text-align: center;">Missed an event? Click the link below for more information!</h4>
-          <a href="summer-2021.html"><h4 style="text-align: center;"><u>Summer 2021</u></h4></a>
-        </div>
-      </section>
-    </main>
-
-    <!--Footer Section-->
-    <div id="footer"></div>
-
-    <!--Scroll-to-Top Button-->
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-
-    <!--Vendor JS Files-->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-    <!--Template Main JS File-->
-    <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>

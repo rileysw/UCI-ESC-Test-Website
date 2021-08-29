@@ -1,267 +1,252 @@
+<!-- =======================================================
+    Modified by: Taleen Sarkissian
+                 Webmaster 2018-2019
+                 UC Irvine Engineering Student Council
+======================================================= -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Engitech</title>
 
-    <!--ESC Website Title-->
-    <title>Engineering Student Council</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
-    <!--ESC Favicon-->
-    <link href="assets/img/logos/esc-logo-blue-gold.png" rel="icon" />
-
-    <!--Google Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-
-    <!--Vendor CSS Files (Animations, Icons, Image/Video, Mobile Swiping)-->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!--Main CSS File-->
-    <link href="assets/css/style.css" rel="stylesheet" />
-
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" />
     <!-- =======================================================
-    * Template Name: Groovin - v4.2.0
-    * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
-
-    <!--Header and Footer Integration with jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        Theme Name: Day
+        Theme URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+        Author: BootstrapMade
+        Author URL: https://bootstrapmade.com
+    ======================================================= -->
+    <script src="js/jquery.js"></script>
+    <script src='lib/jquery.min.js'></script>
+    <script src = "lib/moment.min.js"></script>
+    <link href='css/fullcalendar.css' rel='stylesheet' />
+    <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src = "js/fullcalendar.min.js"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106937092-1"></script>
     <script>
-      $.get("header.html", function (response) {
-        $("#header").html(response);
-      });
-      $.get("footer.html", function (response) {
-        $("#footer").html(response);
-      });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106937092-1');
     </script>
   </head>
 
-  <body>
-    <header id="header" class="fixed-top d-flex align-items-center">
-  <div class="container d-flex align-items-center justify-content-between">
-    <!--ESC Logo-->
-    <a href="index.html" class="logo"
-      ><img
-        src="assets/img/logos/esc-logo-white-gold.png"
-        alt=""
-        class="img-fluid"
-    /></a>
+	<header>
+    <script>
+      $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </header>
+<body>
 
-    <!--ESC Name-->
-    <h1 class="logo">
-      <a href="index.html">Engineering Student Council</a>
-    </h1>
+<div id="header"></div>
 
-    <nav id="navbar" class="navbar">
-      <ul>
-        <!--Events Dropdown-->
-        <li class="dropdown">
-          <a href="#"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <!--Upcoming Events Tab-->
-            <li class="dropdown">
-              <a href="#"
-                ><span>Upcoming Events (TBA)</span> <i class="bi"></i
-              ></a>
-              <ul>
-                <!--Add Upcoming Events Here-->
-              </ul>
-            </li>
-            <div class="nav-divider"></div>
-            <!--Past Events Tab-->
-            <li class="dropdown">
-              <a href="#"
-                ><span>Past Events</span> <i class="bi bi-chevron-right"></i
-              ></a>
-              <ul>
-                <li>
-                  <a href="summer-2021.html">Summer 2021</a>
-                </li>
-              </ul>
-            </li>
-            <!--Annual Events Tab-->
-            <li class="dropdown">
-              <a href="#"
-                ><span>Annual Events</span> <i class="bi bi-chevron-right"></i
-              ></a>
-              <ul>
-                <li>
-                  <a href="network-dinner.html">Networking Dinner Night</a>
-                </li>
-                <li><a href="deans-picnic.html">Dean's Picnic</a></li>
-                <li><a href="research-fair.html">Research Fair</a></li>
-                  <a href="engitech.html">EngiTech Career Fair</a>
-                </li>
-                  <div class="nav-divider"></div>
-                  <li><a href="eweek.html">E-Week</a></li>
-              </ul>
-            </li>
-            <!--Add Calendar Tab Here-->
-            <!--<li><a href="calendar.html">Calendar</a></li>-->
-          </ul>
-        </li>
+  <div class="ndn">
+    <div class="container">
+      <!-- Date and Location -->
+      <div class="box-ndn">
+        <div id="NDN-header"></div>
 
-        <!--Committees Dropdown-->
-        <li class="dropdown">
-          <a href="#"
-            ><span>Committees</span> <i class="bi bi-chevron-down"></i
-          ></a>
-          <ul>
-            <!--ECOM and Cabinet Tabs-->
-            <li>
-              <a href="ecomm.html">Executive Committee Members</a>
-            </li>
-            <li><a href="cabinet.html">Cabinet Members</a></li>
-            <div class="nav-divider"></div>
-            <!--Cabinet Committee Tabs-->
-            <li>
-              <a href="outreach.html">Community Outreach</a>
-            </li>
-            <li>
-              <a href="corporate.html">Corporate Affairs</a>
-            </li>
-            <li>
-              <a href="faculty.html">Faculty Engagement</a>
-            </li>
-            <li>
-              <a href="studs.html">Student Involvement</a>
-            </li>
-            <li>
-              <a href="communications.html">Communications</a>
-            </li>
-            <div class="nav-divider"></div>
-            <!--LIFE and EMF Tabs-->
-            <li>
-              <a href="life.html">Leaders in Freshman Engineering</a>
-            </li>
-            <li>
-              <a href="emf.html">Engineers Mentoring the Future</a>
-            </li>
-          </ul>
-        </li>
-
-        <!--Add Application Dropdown Here (If Needed)-->
-
-        <!--Add Company Info Dropdown Here (If Needed)-->
-
-        <!--About Us Dropdown-->
-        <li class="dropdown">
-          <a href="#"
-            ><span>About Us</span> <i class="bi bi-chevron-down"></i
-          ></a>
-          <ul>
-            <!--About Us Tabs-->
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="mission.html">Our Mission</a></li>
-            <div class="nav-divider"></div>
-            <li><a href="http://esc.eng.uci.edu/p-council/index.html" target="_blank" rel="noopener noreferrer">P-Council</a></li>
-            <div class="nav-divider"></div>
-            <!--FAQs Tab-->
-            <li><a href="faq.html">FAQs</a></li>
-          </ul>
-        </li>
-
-        <!--Contact Us Button-->
-        <li><a class="getstarted scrollto" href="#footer">Contact Us</a></li>
-
-      </ul>
-
-      <!--Boostrap Mobile Navigation Bar-->
-      <i class="bi bi-list mobile-nav-toggle"></i>
-      
-    </nav>
-  </div>
-</header>
-
-    <!--Title Bar Section ("breadcrumbs" is used for CSS)-->
-    <section id="title" class="breadcrumbs">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>EngiTech Career Fair</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>EngiTech Career Fair</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!--Information Section ("portfolio" is used for CSS)-->
-    <section id="engitech">
-      <div class="container">
-        <div class="row gy-4">
-          <!--Image-->
-          <div class="col-lg-5">
-            <img
-              src="assets/img/events/engitech.png"
-              alt=""
-              style="max-width: 400px; max-height: 400px"
-            />
-          </div>
-          <!--Text-->
-          <div class="col-lg-7">
-            <div class="portfolio-description">
-              <pre><h2>About Engitech Career Fair</h2></pre>
-              <p>
-                ESC is proud to host the 49th annual EngiTech Career Fair in
-                Winter 2022! EngiTech is a great chance for you to network with
-                recruiters and gain opportunities to pick up an internship or
-                job. Both UCI Engineering and ICS majors are heavily encouraged
-                to apply!<br /><br />
-              </p>
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <div class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="100ms">
+              <hr width="440px" align="center"></hr>
+                <h3>The 46th Annual <strong>EngiTECH Career Fair</strong></h3>
+              <hr width="440px" align="center"></hr>
             </div>
-            <div class="portfolio-info">
-              <pre><h3>Event Information (TBA)</h3></pre>
-              <p><strong>Date: </strong></p>
-              <p><strong>Time: </strong></p>
-              <p><strong>Location: </strong></p>
-              <p><strong>RSVP: </strong></p>
+            <div class="engitech-info">
+            <p><strong>Date: </strong>February 27th, 2019 </p>
+            <p><strong>Time: </strong> 9:00 AM to 3:00 PM</p>
+            <p><strong>Location: </strong>UC Irvine Student Center, Doheny Beach</p>
+            <!--<a href="engitech/Engitech_2018_Information_Packet.pdf" target="_blank">2018 EngiTECH Information Packet</a>-->
+            <br>
+            <br>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!--Footer Section-->
-    <div id="footer"></div>
+        <!-- About -->
+        <div class="team">
+          <div class="container">
 
-    <!--Scroll-to-Top Button-->
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <div class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="100ms">
+              <hr width="325px" align="center">
+              <h3>About <strong>EngiTECH Career Fair</strong></h3>
+              <hr width="325px" align="center">
+            </div>
+          </div>
+          <div class="engitech-info">
+          <p>
+            ESC is proud to host the 46th annual EngiTECH Career Fair! If you don't know what EngiTECH is,
+            it's a great chance for you to network and possibly pick up an internship or job! This event caters
+            to both Engineering and ICS majors on campus and is part of a series of events we're having for E-Week!
+          </p>
+          <p>
+            The full event schedule can be found <a href="http://esc.eng.uci.edu/eweek.html" target="_blank">here</a>
+          </p>
+          <br>
+        </div>
+        </div>
+      </div>
+    </div>
 
-    <!--Vendor JS Files-->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <!-- Company List -->
+      <div class="team">
+        <div class="container">
+        <div class="box col-lg-6 col-lg-offset-3 col-md-offset-3 col-md-offset-3">
+            <div class="text-center">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Companies Attending EngiTECH</th>
+            </tr>
+          </thead>
+<!--          <p>
+            List of companies attending coming in the future!
+          </p>
+-->          <tbody>
+            <tr>
+              <td>Yahoo (Gold sponsor)</td>
+            </tr>
+            <tr>
+              <td>Masimo (Silver sponsor)</td>
+            </tr>
+            <tr>
+              <td>MobilityWare (Silver sponsor)</td>
+            </tr>
+            <tr>
+              <td>Shimmick Construction/AECOM Civil Construction (Silver sponsor)</td>
+            </tr>
+            <tr>
+              <td>Pioneer Circuits, Inc. (Silver sponsor)</td>
+            </tr>
+            <tr>
+              <td>MKS Instruments, Inc.</td>
+            </tr>
+            <tr>
+              <td>Precision Castparts Corp.</td>
+            </tr>
+            <tr>
+              <td>City of Los Angeles Department of Transportation (LADOT)</td>
+            </tr>
+            <tr>
+              <td>TERADYNE</td>
+            </tr>
+            <tr>
+              <td>Los Angeles County Public Works</td>
+            </tr>
+            <tr>
+              <td>iD Tech</td>
+            </tr>
+            <tr>
+              <td>Hazen and Sawyer</td>
+            </tr>
+            <tr>
+              <td>Control Components, Inc.</td>
+            </tr>
+            <tr>
+              <td>Western Digital</td>
+            </tr>
+            <tr>
+              <td>Ramboll US Corporation</td>
+            </tr>
+            <tr>
+              <td>Los Angeles Department of Water and Power</td>
+            </tr>
+            <tr>
+              <td>SPAWAR Systems Center Pacific</td>
+            </tr>
+            <tr>
+              <td>Applied Medical</td>
+            </tr>
+            <tr>
+              <td>HDR, Inc.</td>
+            </tr>
+            <tr>
+              <td>Surcle.io</td>
+            </tr>
+            <tr>
+              <td>Psomas</td>
+            </tr>
+            <tr>
+              <td>Extron Electronics</td>
+            </tr>
+            <tr>
+              <td>Skyworks</td>
+            </tr>
+            <tr>
+              <td>Aquafine Corporation</td>
+            </tr>
+            <tr>
+              <td>Safran Electronics and Defense, Avionics USA</td>
+            </tr>
+            <tr>
+              <td>Meggitt Defense Systems Inc</td>
+            </tr>
+            <tr>
+              <td>Saratech</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+    </div>
 
-    <!--Template Main JS File-->
-    <script src="assets/js/main.js"></script>
-  </body>
+      <!-- About ESC -->
+      <div class="box-ndn">
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <div class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <hr width="420px" align="center">
+              <h3>About <strong>Engineering Student Council</strong></h3>
+              <hr width="420px" align="center">
+            </div>
+          </div>
+          <p>
+            EngiTECH is hosted by the Engineering Student Council (ESC), a
+            non-profit, student-run organization established to represent UC
+            Irvine’s engineering student body. Our goal is to serve as the central
+            network of communication and support between students, alumni,
+            faculty, and industry professionals to facilitate a culture of successful
+            and innovative engineering. We are proud to have recently received
+            three outstanding awards from the Associated Students of University of California,
+            Irvine. Among over 500 organizations on campus, ESC was recognized as the Most Outstanding Student
+            Organization. If you have any further questions, please contact our Corporate Affairs Co-Directors, Mira
+	    Asad and David Casaburi, at <a href="mailto:engitech@uci.edu">engitech@uci.edu</a>. Thank you in advance
+            for your support. We look forward to
+            seeing you at our EngiTECH Career Fairs!
+          </p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+  <div id="footer"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>wow = new WOW({}).init();</script>
+
+</body>
 </html>

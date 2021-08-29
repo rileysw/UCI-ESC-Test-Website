@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>President's Council</title>
+    <!--REQUIRED STYLE SHEETS-->
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--ANIMATED FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
+     <!--PRETTYPHOTO MAIN STYLE -->
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+       <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="../js/jquery.js"></script>
+    <script>
+      $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+
+    </script>
+
+</head>
+<body>
+
+  <!-- NAV SECTION -->
+         <div id = "header"></div>
+     <!--END NAV SECTION -->
+
+<!--BODY SECTION-->
+
+<div class="container"  >
+    <div class="row top-pad">
+        <div  class="col-md-12" >
+            <h1>Battle of the ESO</h1>
+        </div>
+    </div>
+</div>
+
+<section >
+    <div class="container">
+
+         <div class="row f-s" >
+
+            <div class="col-md-12 col-sm-12">
+                  <div class="panel panel-default">
+
+                    <div class="panel-body">
+                      <head>
+                        <script type="text/javascript">
+                        window.onload = function () {
+
+                              //ID of BESO Google Sheet
+                              var spreadsheetID = "1ANORVuHCwZOXngkTg6o02DWooJj0bgwPTF-YsrwD1dk";
+
+                              var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/basic?alt=json";
+
+                              $.getJSON(url, function(data){
+                                var entry = data.feed.entry;
+                                console.log(entry);
+                              
+
+                              var chart = new CanvasJS.Chart("chartContainer", {
+
+                                subtitles:[
+
+                                  {
+                                    text: "Points",
+                                    horizontalAlign:"left",
+                                    verticalAlign:"top",
+                                    fontFamily	:"Verdana",
+                                    fontWeight:"bold",
+                                    fontSize:20,
+                                    margin:15
+                                  },
+
+                                ],
+                                  animationEnabled: true,
+                                  animationDuration: 2400,
+                                  interactivityEnabled: true,
+
+                                  axisY: {
+                                      tickThickness: 0,
+                                      lineThickness: 0,
+                                      valueFormatString: " ",
+                                      gridThickness: 0
+
+                                  },
+                                  axisX: {
+                                      tickThickness: 0,
+                                      lineThickness: 0,
+                                      labelFontSize: 26,
+                                      labelFontColor: "black",
+                                      labelAutoFit: true
+
+                                  },
+                                  data: [
+                                  {
+                                      indexLabelFontSize: 20,
+                                      toolTipContent: "<h5>{indexLabel}</h5> <h5><strong><span style='\"'color: red;'\"'>{y}</strong> Points</h5>",
+
+                                      indexLabelPlacement: "inside",
+                                      indexLabelFontColor: "#fff",
+                                      indexLabelFontWeight: 400,
+                                      indexLabelFontFamily: "Verdana",
+                                      color: "#19598a",
+                                      type: "bar",
+                                      dataPoints: [
+                                          { y: 21, label: "21", indexLabel: "Triangle" },     //# after y: is bar size
+                                          { y: 25, label: "25", indexLabel: "Theta Tau" },
+                                          { y: 33, label: "33", indexLabel: "Tau Beta Pi" },
+                                          { y: 36, label: "36", indexLabel: "SWE" },
+                                          { y: 32, label: "32", indexLabel: "SHPE" },
+                                          { y: 25, label: "25", indexLabel: "Phi Rho Sigma" },
+                                          { y: 33, label: "33", indexLabel: "Omega Chi Epsilon" },
+                                          { y: 36, label: "36", indexLabel: "MatSci" },
+                                          { y: 32, label: "32", indexLabel: "Global Engineering Brigades" },
+                                          { y: 25, label: "25", indexLabel: "FUSION" },
+                                          { y: 33, label: "33", indexLabel: "EWB" },
+                                          { y: 36, label: "36", indexLabel: "ESC" },
+                                          { y: 23, label: "23", indexLabel: "EERI" },
+                                          { y: 36, label: "36", indexLabel: "Chi Epsilon" },
+                                          { y: 32, label: "32", indexLabel: "BMES" },
+                                          { y: 36, label: "36", indexLabel: "ANS" },
+                                          { y: 40, label: "40", indexLabel: "AIChE" },
+
+                                      ]
+                                  }
+                                  ]
+                              });
+
+                              chart.render();
+                              });
+                          }
+                        </script>
+                        <script type="text/javascript" src="beso/script/canvasjs.min.js"></script>
+                      </head>
+                      <body>
+                        <div id="chartContainer" style="height: 800px; width: 100%;">
+                        </div>
+                        <p style="text-align:center">Be part of the battle! <a href="about.html">Learn more </a> to join P-Council</p>
+                      </body>
+
+                 </div>
+                </div>
+
+                </div>
+              </div>
+
+            </div>
+        </div>
+  </section>
+</body>
+
+<!--FOOTER SECTION -->
+<div id="footer" style="background-color:#fff">
+
+</div>
+<!-- END FOOTER SECTION -->
+
+<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+<!-- CORE JQUERY  -->
+<script src="assets/plugins/jquery-1.10.2.js"></script>
+<!-- BOOTSTRAP CORE SCRIPT   -->
+<script src="assets/plugins/bootstrap.min.js"></script>
+ <!-- ISOTOPE SCRIPT   -->
+<script src="assets/plugins/jquery.isotope.min.js"></script>
+<!-- PRETTY PHOTO SCRIPT   -->
+<script src="assets/plugins/jquery.prettyPhoto.js"></script>
+<!-- CUSTOM SCRIPTS -->
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

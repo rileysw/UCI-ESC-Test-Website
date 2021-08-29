@@ -1,266 +1,315 @@
+<!-- =======================================================
+    Modified by: Amy Yee
+                 Webmaster 2017-2018
+                 UC Irvine Engineering Student Council
+======================================================= -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>E-Week</title>
 
-    <!--ESC Website Title-->
-    <title>Engineering Student Council</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
-    <!--ESC Favicon-->
-    <link href="assets/img/logos/esc-logo-blue-gold.png" rel="icon" />
-
-    <!--Google Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-
-    <!--Vendor CSS Files (Animations, Icons, Image/Video, Mobile Swiping)-->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!--Main CSS File-->
-    <link href="assets/css/style.css" rel="stylesheet" />
-
-    <!-- =======================================================
-    * Template Name: Groovin - v4.2.0
-    * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
-
-    <!--Header and Footer Integration with jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/animate.css">
+  	<link href="css/animate.min.css" rel="stylesheet">
+  	<link href="css/style.css" rel="stylesheet" />
+      <!-- =======================================================
+          Theme Name: Day
+          Theme URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+          Author: BootstrapMade
+          Author URL: https://bootstrapmade.com
+      ======================================================= -->
+    <script src="js/jquery.js"></script>
+    <link href='css/fullcalendar.css' rel='stylesheet' />
+    <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='lib/jquery.min.js'></script>
+    <script src = "lib/moment.min.js"></script>
+    <script src = "js/fullcalendar.min.js"></script>
+    <script src = "js/gcal.js"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106937092-1"></script>
     <script>
-      $.get("header.html", function (response) {
-        $("#header").html(response);
-      });
-      $.get("footer.html", function (response) {
-        $("#footer").html(response);
-      });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106937092-1');
     </script>
+
   </head>
 
+  <header id="header">
+    <script>
+      $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </header>
   <body>
-    <header id="header" class="fixed-top d-flex align-items-center">
-  <div class="container d-flex align-items-center justify-content-between">
-    <!--ESC Logo-->
-    <a href="index.html" class="logo"
-      ><img
-        src="assets/img/logos/esc-logo-white-gold.png"
-        alt=""
-        class="img-fluid"
-    /></a>
+    <div id="header"></div>
 
-    <!--ESC Name-->
-    <h1 class="logo">
-      <a href="index.html">Engineering Student Council</a>
-    </h1>
 
-    <nav id="navbar" class="navbar">
-      <ul>
-        <!--Events Dropdown-->
-        <li class="dropdown">
-          <a href="#"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <!--Upcoming Events Tab-->
-            <li class="dropdown">
-              <a href="#"
-                ><span>Upcoming Events (TBA)</span> <i class="bi"></i
-              ></a>
-              <ul>
-                <!--Add Upcoming Events Here-->
-              </ul>
-            </li>
-            <div class="nav-divider"></div>
-            <!--Past Events Tab-->
-            <li class="dropdown">
-              <a href="#"
-                ><span>Past Events</span> <i class="bi bi-chevron-right"></i
-              ></a>
-              <ul>
-                <li>
-                  <a href="summer-2021.html">Summer 2021</a>
-                </li>
-              </ul>
-            </li>
-            <!--Annual Events Tab-->
-            <li class="dropdown">
-              <a href="#"
-                ><span>Annual Events</span> <i class="bi bi-chevron-right"></i
-              ></a>
-              <ul>
-                <li>
-                  <a href="network-dinner.html">Networking Dinner Night</a>
-                </li>
-                <li><a href="deans-picnic.html">Dean's Picnic</a></li>
-                <li><a href="research-fair.html">Research Fair</a></li>
-                  <a href="engitech.html">EngiTech Career Fair</a>
-                </li>
-                  <div class="nav-divider"></div>
-                  <li><a href="eweek.html">E-Week</a></li>
-              </ul>
-            </li>
-            <!--Add Calendar Tab Here-->
-            <!--<li><a href="calendar.html">Calendar</a></li>-->
-          </ul>
-        </li>
-
-        <!--Committees Dropdown-->
-        <li class="dropdown">
-          <a href="#"
-            ><span>Committees</span> <i class="bi bi-chevron-down"></i
-          ></a>
-          <ul>
-            <!--ECOM and Cabinet Tabs-->
-            <li>
-              <a href="ecomm.html">Executive Committee Members</a>
-            </li>
-            <li><a href="cabinet.html">Cabinet Members</a></li>
-            <div class="nav-divider"></div>
-            <!--Cabinet Committee Tabs-->
-            <li>
-              <a href="outreach.html">Community Outreach</a>
-            </li>
-            <li>
-              <a href="corporate.html">Corporate Affairs</a>
-            </li>
-            <li>
-              <a href="faculty.html">Faculty Engagement</a>
-            </li>
-            <li>
-              <a href="studs.html">Student Involvement</a>
-            </li>
-            <li>
-              <a href="communications.html">Communications</a>
-            </li>
-            <div class="nav-divider"></div>
-            <!--LIFE and EMF Tabs-->
-            <li>
-              <a href="life.html">Leaders in Freshman Engineering</a>
-            </li>
-            <li>
-              <a href="emf.html">Engineers Mentoring the Future</a>
-            </li>
-          </ul>
-        </li>
-
-        <!--Add Application Dropdown Here (If Needed)-->
-
-        <!--Add Company Info Dropdown Here (If Needed)-->
-
-        <!--About Us Dropdown-->
-        <li class="dropdown">
-          <a href="#"
-            ><span>About Us</span> <i class="bi bi-chevron-down"></i
-          ></a>
-          <ul>
-            <!--About Us Tabs-->
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="mission.html">Our Mission</a></li>
-            <div class="nav-divider"></div>
-            <li><a href="http://esc.eng.uci.edu/p-council/index.html" target="_blank" rel="noopener noreferrer">P-Council</a></li>
-            <div class="nav-divider"></div>
-            <!--FAQs Tab-->
-            <li><a href="faq.html">FAQs</a></li>
-          </ul>
-        </li>
-
-        <!--Contact Us Button-->
-        <li><a class="getstarted scrollto" href="#footer">Contact Us</a></li>
-
-      </ul>
-
-      <!--Boostrap Mobile Navigation Bar-->
-      <i class="bi bi-list mobile-nav-toggle"></i>
-      
-    </nav>
-  </div>
-</header>
-
-    <!--Title Bar Section ("breadcrumbs" is used for CSS)-->
-    <section id="title" class="breadcrumbs">
+    <div class="eweek">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>E-Week</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>E-Week</li>
-          </ol>
-        </div>
-      </div>
-    </section>
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
 
-    <!--Information Section ("portfolio" is used for CSS)-->
-    <section id="e-week">
-      <div class="container">
-        <div class="row gy-4">
-          <!--Image-->
-          <div class="col-lg-5">
-            <img
-              src="assets/img/events/eweek.png"
-              alt=""
-              style="max-width: 400px; max-height: 400px"
-            />
-          </div>
-          <!--Text-->
-          <div class="col-lg-7">
-            <div class="portfolio-description">
-              <pre><h2>About E-Week</h2></pre>
+          <!-- About E-Week -->
+          <div class="box-eweek">
+            <div class="text-center">
+              <br>
+              <br>
+              <hr width="160px" align="center">
+              <h3>E-Week 2020</h3>
+              <hr width="160px" align="center">
+            </div>
+            <!-- <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2"> -->
+              <!-- <div class="text-center">
+                <br>
+                <br>
+                <hr width="285px" align="center">
+                <h3>National Engineers Week</h3>
+                <hr width="285px" align="center">
+              </div> -->
               <p>
-                National Engineers Week, known colloquially as E-Week, is a
-                weeklong celebration of engineering disciplines. Join us for a
-                week of exciting social and professional events hosted by ESC
-                and other engineering student organizations!<br /><br />
+                National Engineers Week, known colloquially as E-Week, is a weeklong celebration of engineers.
+                Join us <b>February 24 to February 27, 2020</b> for a week of exciting social and
+                 professional events hosted by ESC and other student engineering organizations on campus.
               </p>
+              <br>
             </div>
-            <div class="portfolio-info">
-              <pre><h3>Event Information (TBA)</h3></pre>
-              <p><strong>Date: </strong></p>
-              <p><strong>Time: </strong></p>
-              <p><strong>Location: </strong></p>
-              <p><strong>RSVP: </strong></p>
+
+            <!-- E-week 2019 slide show -->
+
+            <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/dist/pa-embed-player.min.js" async></script>
+            <div class="pa-embed-player" style="width:100%; height:480px; display:none;"
+            data-link="https://photos.app.goo.gl/ajJiNKKTXqLNwX8T8"
+            data-title="E-Week 2019"
+            data-description="16 new photos added to shared album">
+            <img data-src="https://lh3.googleusercontent.com/rNaVRXP79jGKcV03RWeUnAYIrFtpa4GaB8WLJVZ4xSBug-hldlETNoC3EljNaagXI1_6j4nM0WyeejTuthrh0ZtLGrmCdrc798a45gdVZu052fzD0YLcHw2FtwWD6UVjMXdKcoz4=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/UEbjB4ameRWWDoHCuzGbev1BBwWXzEixGZRqSlM4fC5RaVu8l4_2aZ7Z9RwOMhrDFLamxUvWz5lpl4lIj-Y1iUwBhlMlVXnFcCGGUzRhvVmR1PJzc3ck5mAeC2mBo7B_-bYcsDP_=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/d7n13PqC7IACjg-0d78Kp48j-xqu_MLTEs2hh2pzr4ZRSKyDLRXpNokZgeJ3N_Pehol5qf6VeoflrL7dhQJ0g_JcNILqYFTy01TMg22a5T4F9S2-J2M-foKqFlFHEGNhVP7nYIzd=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/BRFXxS71blAxuMe_cmgv7D6PoDJgx4dpp6VwNOwh3OA8MtQPFgRk_D649z1_xP16_HSFhVWkJPQaeXuOca2SPYMVtca8f4jLgAL7jYc_i9TNrIEngrofD6PklKn18Sb_kQafMdRC=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/RxxuFiPAmOha2ypqzPT84s8ZaDbz_ALAhKqV9vdA38rNkLN-xajA-FSGg8BokcX7s98QWUp2gVmmDHbRQTSYDPzjGEXG6ZVMbfzD7odY9EfpoWsEvPpvCkim7PCTlatH1730LNj9=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/0XDoTkxkAk4IxUQNc77c-HlvH4rb9ggwYyMyy6aK_Pzgs3gFjQzn4HDpN5i2JgXc3JOSCHG5wlboMyr_xyALsXkLwbzT595CvHPMNxglr9v_WbzmaGvHICQkr0a8Wjjhx2pPMHEI=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/uvbivohQ7W_LG4-6aLwxGiXUGlJ89qlNGBf82r4qgpum1JzQnpwpFeZKoeqYrrDAZSGHuxSZYddURU9tv80ZewgChmrzmmJB1gH4eMS_5KuTJgQWMvgTbQ_35hBbZvc0u6_H9OzP=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/rs1loI1YUym8LTsBi-aBM8KggApLQGG3hPfjJORyBAZPiE5GhIq6prwPfeIHqSIPCc55pa3cQr5aaUMpAH2aBItsZrDHT-n1czUP_r_IyLNvJXAhZ30yTzyaU-uVfxZsd1POpNRP=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/wXwvPQPtU1eomdFUM8XmuHRW9YxFkCtZrDKxbPUChqoQkXGZ1kUUE4cnuq2yilVYtA0BssScaWs0gboXZ3m9qyLdtBHBad1bmceL21Bo0pq0jBHNd5uL8kzcRJtTAhWCs2ncXTmu=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/8zcO-Ui0kSikIYVyqQKmyMuUpUEVXk57JfQEVzp_-phZ_8lux1mkytGa-tuM_Phxr1RALALkkm9OTaJthzBtjgUeVWtgg6N6hdTbKvfI4eHj8NZrjnjYU45zDvth73Iawy0R33US=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/TYEO_6INwMEBUst2y95-vft2d2bXUoqrGj95eOS2iuHtJK00egqvaFFxn-wf4Ax-DZOe2Evev_bXrKBWIVsvZtY6AaLQcxYlZ3IG11M9abWM61-QLkxGj6ufcxSQdpSDsR1h6iLX=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/HoLSQ_IoaFpFCLPYzO1v89D3428CFx5F6L3egc0MGZGQnqWLtN77wwaBZWTmWT77ysOQDDcV-46f2aW_i23XEZbLf0BuRDIJUVULEyJc7R_KRFw30ioOvjlFAcBRqIZqeFEYRNFb=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/wY3clKBytsjV2wXxCpyvQpMsZtnkMszt48wpdlZjC0MBzByEzj70pmwoNQwsw3q7SFlTzAzevA_x0NHtYwYmRBWB4cH7aQOQJfGBdLuP2TfCmktdiHqToi8ulCDlN2ZfgKqkzQ16=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/If41HRcAhUFhSI9KLoD2Pd1gjeBO-gVAYhesynFRFaWOGZPaoCwBgttqlflXobf0yVLUGnBD5AUvDucyWHEc_QXzf59yfUijJ6II15oqFBzRr92L35I-ex3K_a7of9eHqFuJItbQ=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/HFlrhCudpX1XKu_FhxjE9qwrDdKDIwDKq8JY6N6U74p3rjBkLxlMIUxgOEOtPJu20nXsFbNEa8a0W_TC1GRzJGoHci4Kp-wMV6s-cowh9rVI2aEZGdZllbx-g55wX0q74rm4JeJm=w1920-h1080" src="" alt="" />
+            <img data-src="https://lh3.googleusercontent.com/1Ryi9PLC_8Lbz2iSQ9lhlIxpb0oAHSeNW12wYqs2LC9GV8-R19VQrgJEY1Vspn75CKvomZomJHq9bXpu5Hez3X0t2aCi39mNL3FnYusHvSu4-OKPYf574JVhznCmhiXuJlus1z1L=w1920-h1080" src="" alt="" />
+            </div>
+
+        <!-- E-Week Flyer -->
+      <!--  <a href="assets/eweek/eweek_flyer.png" target="_blank"> <img src="assets/eweek/eweek_flyer.png" width="100%"> </a>
+        <br>
+        <br> ->
+        <!-- E-Week events -->
+        <div class="box-eweek">
+            <br>
+            <table style="width:100%">
+
+              <tr>
+                <td><strong>Kickoff Fair</strong></td>
+                <td>
+                  To kick off E-Week 2020, organizations on campus host exciting activities in the spirit of engineering. This event is open to all students and faculty, as anyone can appreciate the wonders of engineering.
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Lip Dub</strong></td>
+                <td>
+                  Leaders in Freshman Engineering (LIFE) choreograph an energetic and easy-to-learn dance to a popular song. Join the flashmob at the end and have a chance to be featured on our YouTube channel. Learn the dance, join the fun!
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Dean's Breakfast</strong></td>
+                <td>
+                  Come hang out with your favorite professors as they cook you breakfast! Yep, you read that right. Engineering Faculty members will be making delicious pancakes, and engineering students will enjoy a complimentary breakfast!
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>EngiTECH Career Fair</strong></td>
+                <td>
+                  Land your dream job or internship at our annual EngiTECH career fair! Companies look to recruit outstanding engineering & ICS students.
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>E-Week BBQ</strong></td>
+                <td>
+                  Students can enjoy a complimentary BBQ burger lunch. Engineering & ICS students are welcome!
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Shadow Day</strong></td>
+                <td>
+                  High school students shadow current engineering students to learn more about engineering and higher education.
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Awards Banquet</strong></td>
+                <td>
+                  Outstanding professors, TAs, and students from each engineering department will be honored at this annual Engineering Awards Banquet.
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Faculty Sports Day</strong></td>
+                <td>
+                  Faculty, alumni, and students partake in this annual friendly competition.
+                </td>
+              </tr>
+
+            </table>
+            <br>
+            <br>
+          </div>
+
+        <!-- Past E-Week Showcase -->
+        <div class="box-eweek">
+          <div class="text-center">
+            <hr width="270px" align="center">
+            <h3>Past E-Week Lip Dub</h3>
+            <hr width="270px" align="center">
+
+
+
+
+
+        <!-- Picture Carousel -->
+      <!--  <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+        <!--  <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+        <!--  <div class="carousel-inner">
+            <div class="item active">
+              <img src="assets/eweek/eweek1.jpg" alt="E-Week Day 1">
+              <div class="carousel-caption">
+                <div class="wow fadeIn" data-wow-duration="600ms" data-wow-delay="500ms">
+                  <div class="hidden-xs">
+                    <h5>Kickoff Fair</h5>
+                    <p>
+                      ESC flashmob is all smiles as they kick off E-Week
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="assets/eweek/eweek2.jpg" alt="E-Week Day 2">
+              <div class="carousel-caption">
+                <div class="wow fadeIn" data-wow-duration="600ms" data-wow-delay="500ms">
+                  <div class="hidden-xs">
+                    <h5>EngiTECH Career Fair</h5>
+                    <p>
+                      Engineering students connect with industry professionals
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="assets/eweek/eweek3.jpg" alt="E-Week Day 3">
+              <div class="carousel-caption">
+                <div class="wow fadeIn" data-wow-duration="600ms" data-wow-delay="500ms">
+                  <div class="hidden-xs">
+                    <h5>Introduce a Girl to Engineering</h5>
+                    <p>Aspiring girl engineers join ESC at E-Week to learn about engineering </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="assets/eweek/eweek4.jpg" alt="E-Week Day 4">
+              <div class="carousel-caption">
+                <div class="wow fadeIn" data-wow-duration="600ms" data-wow-delay="500ms">
+                  <div class="hidden-xs">
+                    <h5>Engineering Banquet</h5>
+                    <p>Expectional engineering faculty, students, and student organizations recognized at the annual awards banquet </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="assets/eweek/eweek5.jpg" alt="E-Week Day 5">
+              <div class="carousel-caption">
+                <div class="wow fadeIn" data-wow-duration="600ms" data-wow-delay="500ms">
+                  <div class="hidden-xs">
+                    <h5>Faculty Sports Day</h5>
+                    <p>Engineering faculty and students enjoy barbeque and friendly sports competitions</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- Left and right controls -->
+        <!--  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-      </div>
-    </section>
 
-    <!--Footer Section-->
-    <div id="footer"></div>
 
-    <!--Scroll-to-Top Button-->
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+        <!-- Links to Lip Dub videos -->
+        <p> <a href="https://www.youtube.com/watch?v=I4CvL99g1Aw&fbclid=" target="_blank">Link to Lip Dub 2019 </a> </p>
+        <p> <a href="https://www.youtube.com/watch?v=ERHT0FFgi4Q&list=PLzRjdViBCgbx5tAECBdn-B6mSKSVgNKUD" target="_blank">Link to Lip Dub 2018 </a> </p>
+        <p> <a href="https://www.youtube.com/watch?v=qa2s9Y5HkPQ" target="_blank">Link to Lip Dub 2017 </a> </p>
+        <p> <a href="https://www.youtube.com/watch?v=67EBwY9LjmA" target="_blank">Link to Lip Dub 2016 </a> </p>
+        <p> <a href="https://www.youtube.com/watch?v=K7tLCQABawY" target="_blank">Link to Lip Dub 2015 </a></p>
+        <br>
 
-    <!--Vendor JS Files-->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      </div> <!-- Closes text-center -->
+    </div>
+    </div>
+  </div>
+</div>
 
-    <!--Template Main JS File-->
-    <script src="assets/js/main.js"></script>
+<div id="footer"></div>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/jquery.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+  	<script src="js/wow.min.js"></script>
+  	<script>wow = new WOW({}).init();</script>
+
+    <!--fullcalendar
+    <script src='https://fullcalendar.io/js/fullcalendar-3.1.0/lib/moment.min.js'></script>
+  <script src='https://fullcalendar.io/js/fullcalendar-3.1.0/lib/jquery.min.js'></script>
+  <script src='https://fullcalendar.io/js/fullcalendar-3.1.0/lib/jquery-ui.min.js'></script>
+  <script src='https://fullcalendar.io/js/fullcalendar-3.1.0/fullcalendar.min.js'></script> -->
+
   </body>
-</html>
+  </html>

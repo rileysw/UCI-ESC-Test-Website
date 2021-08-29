@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>President's Council </title>
+    <!--REQUIRED STYLE SHEETS-->
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--ANIMATED FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
+     <!--PRETTYPHOTO MAIN STYLE -->
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+       <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="../js/jquery.js"></script>
+    <script>
+      $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+
+      //ID of BESO Google Sheet
+      var spreadsheetID = "1ANORVuHCwZOXngkTg6o02DWooJj0bgwPTF-YsrwD1dk";
+
+      var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/basic?alt=json";
+
+      $.getJSON(url, function(data){
+        console.log(data);
+      });
+    </script>
+
+</head>
+<body>
+  <!-- NAV SECTION -->
+  <div id = "header"></div>
+     <!--END NAV SECTION -->
+
+
+
+    <!--HOME PAGE SECTION-->
+<!--<div id="home-sec">
+   <div class="container"  >
+        <div class="row ">
+            <div  class="col-md-12" >
+               <span class="head-main" >President's Council</span>
+            </div>
+        </div>
+    </div>
+  </div>-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- skedda -->
+<section>
+  <div class="row visible-md visible-lg">
+    <div class="container">
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="col-lg-12">
+              <a href="https://escuci.skedda.com/booking" target="_blank"><button class="button"><span>Reserve a Room</span></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--carousel images-->
+<section>
+<div class="row visible-md visible-lg">
+  <div class="container">
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-lg-12">
+            <div id="carousel-example-generic" class="carousel slide">
+              <ol class="carousel-indicators hidden-xs">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+              </ol>
+              <div class="carousel-inner">
+                <!--<div class="item active">
+                  <img class="img-responsive img-full" src="img/WRC_banner.png" alt="WRC banner" style="width:843px;height:403px;">
+                </div>-->
+                <div class="item active">
+                  <img class="img-responsive center-block img-full " src="assets/img/pmixer/pcmixer1.jpg" alt="pmixer1" style="width:843px;height:403px;">
+                </div>
+                <div class="item">
+                  <img class="img-responsive center-block img-full" src="assets/img/pmixer/pcmixer2.jpg" alt="pmixer2" style="width:843px;height:403px;">
+                </div>
+                <div class="item">
+                  <img class="img-responsive center-block img-full" src="assets/img/pmixer/pcmixer3.jpg" alt="pmixer3" style="width:843px;height:403px;">
+                </div>
+
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="icon-prev"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="icon-next"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<br>
+
+    <!--Join P-Council Section-->
+        <section>
+          <!--<div class="panel1"> -->
+            <div class="container">
+                <a id="join"> <h1>Join P-Council </h1> </a>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                              <h5 class="subtitle">Requirements</h5>
+                              <br>
+                              <p> Each organization must submit the Commitment Packet
+                              <strong><em>Quarter bonus of $100 for clubs that do sign up! ($100 to new and $100 to current clubs that referred)</em></strong></p>
+                              <br>
+                              <p><b>Learn more about P-Council <a href="about.html">here</a></b></p>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                              <h5 class="subtitle" >What is P-Council?</h5>
+                              <br>
+                              <p>P-Council serves as an open forum to collaborate on ideas,
+                                suggestions, complaints, and grievances of the students and
+                                student-run engineering and ICS organizations.
+                              </p>
+                              <p><b>Learn more about P-Council <a href="about.html">here</a></b></p>
+
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                              <h5 class="subtitle">Why Should You Join?</h5>
+                              <br>
+                              <p>Attending P-Council meetings offer numerous benefits including funding from the Dean's
+                                 office, Battle of the ESOs, and the chance to stay connected with other organizations.
+                              </p>
+                              <p><b>Learn more about P-Council <a href="about.html">here</a></b></p>
+                          </div>
+                      </div>
+                    </div>
+            </div>
+            <!--Contact-->
+            <div class="container">
+              <h1> Contact</h1>
+
+                <div class="row f-s" >
+
+                   <div class="col-md-12 col-sm-12">
+                         <div class="panel panel-default">
+
+                           <div class="panel-body">
+                               <div>
+                                 <p style="text-align:center">For more info, please contact VP of Internal Affairs at <a href="mailto:vpinternal.esc.uci@gmail.com" target="_blank">vpinternal.esc.uci@gmail.com</a></p>
+                               </div>
+                           </div>
+                         </div>
+
+                   </div>
+               </div>
+             </div>
+        <!--  </div> -->
+        </section>
+    <!--  </div> -->
+        <br>
+
+  <!--END HOME PAGE SECTION-->
+
+    <!--FOOTER SECTION -->
+    <div id="footer" style="background-color:#fff">
+
+    </div>
+    <!-- END FOOTER SECTION -->
+
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="assets/plugins/bootstrap.min.js"></script>
+     <!-- ISOTOPE SCRIPT   -->
+    <!-- <script src="assets/plugins/jquery.isotope.min.js"></script> -->
+    <!-- PRETTY PHOTO SCRIPT   -->
+    <script src="assets/plugins/jquery.prettyPhoto.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <!-- <script src="assets/js/custom.js"></script> -->
+</body>
+</html>

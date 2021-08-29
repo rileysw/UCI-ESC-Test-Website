@@ -1,0 +1,234 @@
+<!-- =======================================================
+    Modified by: Melany Yeung
+                 Webmaster 2018-2019
+                 UC Irvine Engineering Student Council
+======================================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Executives</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/animate.css">
+  	<link href="css/animate.min.css" rel="stylesheet">
+  	<link href="css/style.css" rel="stylesheet" />
+      <!-- =======================================================
+          Theme Name: Day
+          Theme URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+          Author: BootstrapMade
+          Author URL: https://bootstrapmade.com
+      ======================================================= -->
+    <script src="js/jquery.js"></script>
+    <link href='css/fullcalendar.css' rel='stylesheet' />
+    <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='lib/jquery.min.js'></script>
+    <script src = "lib/moment.min.js"></script>
+    <script src = "js/fullcalendar.min.js"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106937092-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+      gtag('config', 'UA-106937092-1');
+    </script>
+
+  </head>
+
+  <header id="header">
+    <script>
+      $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+</header>
+
+
+<section>
+  <div class="team">
+    <div class="text-center wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="100ms">
+      <h2>Executives</h2>
+      <!--<hr width="180px' align="center">-->
+    </div>
+
+
+
+  <div class="container">
+    <!--row 1-->
+        <div class="row-clearfix">
+          <div class="box col-lg-5 col-md-6 col-sm-12">
+            <div class="wow fadeInDown" data-wow-duration="1400ms" data-wow-delay="300ms">
+              <!--Profile Pic-->
+              <div class="media">
+                <div class="pull-left">
+                <img class="media-object" src="./assets/headshots_2020_21/Nyree.JPG" width="180" height="180" alt="Nyree Khachikyan">
+                </div>
+              </div>
+              <!--name and position-->
+              <div class="media-body">
+                <h4><strong>President of ESC</strong></h4>
+                <h5>Nyree Khachikyan</h5>
+                <hr align="left">
+                <p>Major : Biomedical Engineering</p>
+                <p>Year&nbsp;&nbsp;&nbsp;: 4th </p>
+                <p>Email : <a href="mailto:esc.uci@gmail.com">esc.uci@gmail.com</a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="box col-lg-5 col-lg-offset-1 col-md-6 col-sm-12">
+            <div class="wow fadeInDown" data-wow-duration="1400ms" data-wow-delay="600ms">
+              <!--Profile Pic-->
+              <div class="media">
+                <div class="pull-left">
+                <img class="media-object" src="./assets/headshots_2020_21/Ethan.JPG" width="180" height="180" alt="Ethan Smiggs">
+                </div>
+              </div>
+              <!--name and position-->
+              <div class="media-body">
+                <h4><strong>VICE PRESIDENT OF RELATIONS</strong></h4>
+                <h5>Ethan Smiggs</h5>
+                <hr align="left">
+                <p>Major : Biomedical Engineering </p>
+                <p>Year&nbsp;&nbsp;&nbsp;: 4th </p>
+                <p>Email : <a href="mailto:vprelations.esc.uci@gmail.com">vprelations.esc.uci@gmail.com</a> </p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!--row 2-->
+
+      <div class="row-clearfix">
+        <div class="box col-lg-5 col-md-6 col-sm-12">
+          <div class="wow fadeInDown" data-wow-duration="1400ms" data-wow-delay="300ms">
+            <!--Profile Pic-->
+            <div class="media">
+              <div class="pull-left">
+              <img class="media-object" src="./assets/headshots_2020_21/Brandon.JPG" width="180" height="180" alt="Brandon Liu">
+              </div>
+            </div>
+            <!--name and position-->
+            <div class="media-body">
+              <h4><strong>VICE PRESIDENT OF DEVELOPMENT</strong></h4>
+              <h5>Brandon Liu</h5>
+              <hr align="left">
+              <p>Major : Aerospace Engineering </p>
+              <p>Year&nbsp;&nbsp;&nbsp;: 3rd </p>
+              <p>Email : <a href="mailto:vpdev.esc.uci@gmail.com">vpdev.esc.uci@gmail.com</a> </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box col-lg-5 col-lg-offset-1 col-md-6 col-sm-12">
+          <div class="wow fadeInDown" data-wow-duration="1400ms" data-wow-delay="600ms">
+            <!--Profile Pic-->
+            <div class="media">
+              <div class="pull-left">
+              <img class="media-object" src="./assets/headshots_2020_21/Carolina.JPG" width="180" height="180" alt="Carolina Perez">
+              </div>
+            </div>
+            <!--name and position-->
+            <div class="media-body">
+              <h4><strong>Vice President of Internal Affairs</strong></h4>
+              <h5>Carolina Perez</h5>
+              <hr align="left">
+              <p>Major : Mechanical Engineering </p>
+              <p>Year&nbsp;&nbsp;&nbsp;: 4th </p>
+              <p>Email : <a href="mailto:vpinternal.esc.uci@gmail.com">vpinternal.esc.uci@gmail.com</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!--row 3-->
+    <div class="row-clearfix">
+      <div class="box col-lg-5 col-lg-offset-0 col-md-6 col-sm-12">
+        <div class="wow fadeInDown" data-wow-duration="1400ms" data-wow-delay="300ms">
+          <!--Profile Pic-->
+          <div class="media">
+            <div class="pull-left">
+            <img class="media-object" src="./assets/headshots_2020_21/Kaylie.JPG" width="180" height="180" alt="Kaylie Wong">
+            </div>
+          </div>
+          <!--name and position-->
+          <div class="media-body">
+            <h4><strong>Vice President of External Affairs</strong></h4>
+            <h5>Kaylie Wong</h5>
+            <hr align="left">
+            <p>Major : Biomedical Engineering </p>
+            <p>Year&nbsp;&nbsp;&nbsp;: 4th </p>
+            <p>Email : <a href="mailto:vpexternal.esc.uci@gmail.com">vpexternal.esc.uci@gmail.com</a> </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box col-lg-5 col-lg-offset-1 col-md-6 col-sm-12">
+        <div class="wow fadeInDown" data-wow-duration="1400ms" data-wow-delay="600ms">
+          <!--Profile Pic-->
+          <div class="media">
+            <div class="pull-left">
+            <img class="media-object" src="./assets/headshots_2020_21/Lee.JPG" width="180" height="180" alt="Lee Bahir">
+            </div>
+          </div>
+          <!--name and position-->
+          <div class="media-body">
+            <h4><strong>VICE PRESIDENT OF COMMUNICATIONS</strong></h4>
+            <h5>Lee Bahir</h5>
+            <hr align="left">
+            <p>Major : Computer Science & Engineering</p>
+            <p>Year&nbsp;&nbsp;&nbsp;: 2nd</p>
+            <p>Email : <a href="mailto:vpcomm.esc.uci@gmail.com">vpcomm.esc.uci@gmail.com</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row-clearfix">
+      <div class="box col-lg-5 col-md-6 col-sm-12">
+        <div class="wow fadeInDown" data-wow-duration="1400ms" data-wow-delay="600ms">
+          <!--Profile Pic-->
+          <div class="media">
+            <div class="pull-left">
+            <img class="media-object" src="./assets/headshots_2020_21/Nancy.JPG" width="180" height="180" alt="Nancy Morales">
+            </div>
+          </div>
+          <!--name and position-->
+          <div class="media-body">
+            <h4><strong>VICE PRESIDENT OF FINANCE</strong></h4>
+            <h5>Nancy Morales</h5>
+            <hr align="left">
+            <p>Major : Biomedical Engineering </p>
+            <p>Year&nbsp;&nbsp;&nbsp;: 4th</p>
+            <p>Email : <a href="mailto:vpfinance.esc.uci@gmail.com">vpfinance.esc.uci@gmail.com</a> </p>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+
+</section>
+
+
+<div id="footer"></div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>wow = new WOW({}).init();</script>
+
+</body>
+</html>
