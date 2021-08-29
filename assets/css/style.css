@@ -14,13 +14,19 @@ body {
 }
 
 a {
-  color: #5c9f24;
+  color: #3a6ffe;
   text-decoration: none;
 }
 
 a:hover {
   color: #74c92d;
   text-decoration: none;
+}
+
+.intro {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
 }
 
 h1,
@@ -42,7 +48,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5c9f24;
+  background: #3a6ffe;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -56,7 +62,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6fc02c;
+  background: #658fff;
   color: #fff;
 }
 
@@ -69,16 +75,17 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(27, 61, 109, 0.75);
   transition: all 0.5s;
-  z-index: 997;
   height: 80px;
+  padding: 0px;
+  display: flex;
 }
 
 #header .logo {
   font-size: 28px;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
@@ -90,7 +97,8 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  align-self: center;
+  max-width: 100px;
 }
 
 /*--------------------------------------------------------------
@@ -148,7 +156,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #5c9f24;
+  background-color: #3a6ffe;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -174,12 +182,12 @@ h6 {
   color: #fff;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  border: 2px solid #5c9f24;
+  border: 2px solid #3a6ffe;
 }
 
 .navbar .getstarted:hover {
   color: #fff;
-  background: #5c9f24;
+  background: #3a6ffe;
 }
 
 .navbar .getstarted:hover:before,
@@ -221,7 +229,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 .navbar .dropdown:hover > ul {
@@ -265,7 +273,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 @media (max-width: 991px) {
@@ -317,7 +325,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 .navbar-mobile > ul > li {
@@ -333,7 +341,7 @@ h6 {
 
 .navbar-mobile .getstarted {
   margin: 15px;
-  color: #5c9f24;
+  color: #3a6ffe;
   padding-left: 15px;
 }
 
@@ -364,7 +372,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -425,7 +433,7 @@ h6 {
 }
 
 #hero h2 span {
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 #hero p {
@@ -434,6 +442,7 @@ h6 {
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   color: #fff;
+  font-weight: 600;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -500,7 +509,7 @@ h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #5c9f24;
+  background: #3a6ffe;
 }
 
 #hero .btn-get-started {
@@ -518,13 +527,13 @@ h6 {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   text-transform: uppercase;
-  border: 2px solid #5c9f24;
-  background: #5c9f24;
+  border: 2px solid #3a6ffe;
+  background: #3a6ffe;
 }
 
 #hero .btn-get-started:hover {
-  background: #6ab82a;
-  border-color: #6ab82a;
+  background: #658fff;
+  border-color: #658fff;
   color: #fff;
 }
 
@@ -566,7 +575,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 .section-title p {
@@ -602,7 +611,7 @@ section {
 .about .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 .about .content .icon-box p {
@@ -612,8 +621,8 @@ section {
 }
 
 .about .image {
-  background: url("../img/about.jpg") center center no-repeat;
-  background-size: cover;
+  background: url("") center center no-repeat;
+  background-size: contain;
   min-height: 400px;
 }
 
@@ -647,7 +656,7 @@ section {
 .counts .count-box i {
   display: block;
   font-size: 44px;
-  color: #5c9f24;
+  color: #3a6ffe;
   float: left;
   line-height: 0;
 }
@@ -728,7 +737,7 @@ section {
   background: #fff;
   border-radius: 50%;
   transition: 0.5s;
-  color: #5c9f24;
+  color: #3a6ffe;
   overflow: hidden;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
 }
@@ -756,7 +765,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 .services .title::after {
@@ -765,7 +774,7 @@ section {
   display: block;
   width: 50px;
   height: 2px;
-  background: #5c9f24;
+  background: #3a6ffe;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -788,7 +797,7 @@ section {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #8ed851;
+  color: #3a6ffe;
 }
 
 .why-us .box h4 {
@@ -807,7 +816,7 @@ section {
 }
 
 .why-us .box:hover {
-  background: #5c9f24;
+  background: #3a6ffe;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -849,7 +858,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #5c9f24;
+  background: #3a6ffe;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -926,7 +935,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #8ed851;
+  color: #3a6ffe;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -965,14 +974,14 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5c9f24;
+  border: 1px solid #3a6ffe;
 }
 
 .portfolio-details
   .portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  background-color: #5c9f24;
+  background-color: #3a6ffe;
 }
 
 .portfolio-details .portfolio-info {
@@ -1080,7 +1089,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 .team .member .social i {
@@ -1111,7 +1120,7 @@ section {
 
 .pricing .box h4 {
   font-size: 42px;
-  color: #5c9f24;
+  color: #3a6ffe;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
@@ -1143,7 +1152,7 @@ section {
 }
 
 .pricing .box ul i {
-  color: #5c9f24;
+  color: #3a6ffe;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1162,8 +1171,8 @@ section {
   display: inline-block;
   padding: 10px 40px 12px 40px;
   border-radius: 4px;
-  border: 2px solid #5c9f24;
-  color: #5c9f24;
+  border: 2px solid #3a6ffe;
+  color: #3a6ffe;
   font-size: 14px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -1172,12 +1181,12 @@ section {
 }
 
 .pricing .box .btn-buy:hover {
-  background: #5c9f24;
+  background: #3a6ffe;
   color: #fff;
 }
 
 .pricing .recommended {
-  background: #5c9f24;
+  background: #3a6ffe;
 }
 
 .pricing .recommended h3,
@@ -1197,7 +1206,7 @@ section {
 .pricing .recommended .btn-buy:hover {
   background: #fff;
   border-color: #fff;
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 /*--------------------------------------------------------------
@@ -1240,7 +1249,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #9cdc66;
+  color: #658fff;
 }
 
 .faq .faq-list .icon-show,
@@ -1265,7 +1274,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1294,7 +1303,7 @@ section {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 .contact .contact-info address,
@@ -1316,7 +1325,7 @@ section {
 }
 
 .contact .contact-info a:hover {
-  color: #5c9f24;
+  color: #3a6ffe;
 }
 
 .contact .contact-address,
@@ -1379,11 +1388,11 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #5c9f24;
+  border-color: #3a6ffe;
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #5c9f24;
+  background: #3a6ffe;
   border: 0;
   padding: 10px 30px 12px 30px;
   color: #fff;
@@ -1392,7 +1401,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #6ab82a;
+  background: #658fff;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1475,8 +1484,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
+  position: absolute;
+  width: 100%;
   background: #111111;
-  padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
@@ -1523,7 +1533,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #5c9f24;
+  background: #3a6ffe;
   color: #fff;
   text-decoration: none;
 }
@@ -1548,7 +1558,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #8ed851;
+  color: #658fff;
   font-size: 18px;
   line-height: 1;
 }
@@ -1571,7 +1581,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #81d33d;
+  color: #658fff;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1597,14 +1607,14 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #5c9f24;
+  background: #3a6ffe;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #6ab82a;
+  background: #658fff;
 }
 
 #footer .copyright {
@@ -1617,4 +1627,59 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# ESC Webmaster Added Styles
+--------------------------------------------------------------*/
+
+.nav-divider {
+  margin: 10px;
+  border: 1px ridge lightgray;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.profile-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-info-left {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+}
+
+.profile-info-right {
+  display: flex;
+  justify-self: flex-end;
+  flex-wrap: wrap;
+}
+
+.profile-divider-blue {
+  margin: 5px;
+  border: 1px ridge #3a6ffe;
+}
+
+.profile-divider-yellow {
+  margin: 5px;
+  border: 1px ridge #ffd200;
+}
+
+.committees-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
